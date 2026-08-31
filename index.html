@@ -544,7 +544,7 @@
     const trackName = document.getElementById('track-name');
     const trackNumber = document.getElementById('track-number');
 
-    function loadTrack(index, autoplay = false) {
+    function loadTrack(index, autoplay = true) {
       currentTrack = index;
       audio.src = playlist[currentTrack].url;
       trackName.textContent = playlist[currentTrack].title;
